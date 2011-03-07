@@ -1,0 +1,12 @@
+.instructions
+  =se("Enter the phone number at which you would like to receive text messages.")
+.body
+  =form_for($user)
+  .section
+    %label =se("Mobile Phone Number")
+    %br
+    =hidden_field("id")
+    =text_field("sms_phone_number", 'class', 'test')
+  .section
+    =submit_tag("Save")       
+  =end_form_for()

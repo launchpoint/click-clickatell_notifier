@@ -1,0 +1,12 @@
+.instructions
+  =se("This is the template that will be used to send out the notification to a user's mobile phone.")
+.body
+  =form_for($clickatell_template)
+  %table
+    %tr
+      %th =se("Text body")
+      %td =textarea_field('body_text')
+    %tr
+      %th
+      %td =submit_tag('Save')
+  =end_form_for()
